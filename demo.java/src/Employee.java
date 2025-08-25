@@ -5,6 +5,7 @@ public class Employee {
         double hra=0;
         double ta=0;
         double totalincentive=0;
+        double gross;
         
         Scanner em=new Scanner(System.in);
         String name;
@@ -25,6 +26,7 @@ public class Employee {
         da=basicsal*0.1;
         ta=basicsal*0.1;
         totalincentive=hra+da+ta;
+        gross=totalincentive+basicsal;
 
         System.out.println(name);
         System.out.println(basicsal);
@@ -35,6 +37,7 @@ public class Employee {
         System.out.println(da);
         System.out.println(ta);
         System.out.println(totalincentive);
+        System.out.println(gross);
        
 
 
